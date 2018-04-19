@@ -59,3 +59,4 @@ typings/
 .env
 
 start.sh
+keys.yml
