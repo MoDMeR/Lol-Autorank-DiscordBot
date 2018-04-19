@@ -1,5 +1,5 @@
 (function(){
-	const ApiKey = require("./api_key.js");
+	const config = require("./config.js");
 	const Discord = require("discord.js");
 
 	var bot;
@@ -46,7 +46,7 @@
 	module.exports.login = function(callback, Roles) {
 		this.prepareBot(callback, Roles);
 
-		bot.login(ApiKey.getDiscordBotKey());
+		bot.login(config.getDiscordBotKey());
 	}
 
 	module.exports.getAllGuilds = function() {

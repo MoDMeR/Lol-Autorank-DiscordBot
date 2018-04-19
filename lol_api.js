@@ -1,6 +1,6 @@
 (function(){
 	const http = require("https");
-	const ApiKey = require("./api_key.js");
+	const config = require("./config.js");
 
 	var callbackFunction;
 	var lastHttpRequest = "";
@@ -15,7 +15,7 @@
 			callbackFunction = summonerDetailsReceive;
 
 		thisModule = parentModule;
-		lastHttpRequest = encodeURI("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/"+summonerName+"?api_key="+ApiKey.getLolApiKey());
+		lastHttpRequest = encodeURI("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/"+summonerName+"?api_key="+config.getLolApiKey());
 		lastHttpRequest = lastHttpRequest.replace("%2520", "%20");
 		http.get(lastHttpRequest, this.httpCallback);
 	}
@@ -25,7 +25,7 @@
 			callbackFunction = summonerRankReceive;
 
 		thisModule = parentModule;
-		lastHttpRequest = encodeURI("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/"+summonerId+"?api_key="+ApiKey.getLolApiKey());
+		lastHttpRequest = encodeURI("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/"+summonerId+"?api_key="+config.getLolApiKey());
 		lastHttpRequest = lastHttpRequest.replace("%2520", "%20");
 		http.get(lastHttpRequest, this.httpCallback);
 	}
