@@ -3,7 +3,7 @@
     var fs = require("fs");
 
 	try {
-        var config = yaml.safeLoad(fs.readFileSync('keys.yml', 'utf8'));
+        var config = yaml.safeLoad(fs.readFileSync('config.yml', 'utf8'));
 	} catch (e) {
         console.log(e);
 	}
