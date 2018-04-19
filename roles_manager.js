@@ -2,7 +2,7 @@
 	const LolApi = require("./lol_api.js");
 	const roles = [{name: "Vagabond", color: "#030000"},
 					{name: "Newbies (Level < 30)", color: "NAVY"},
-					{name: "Unranked (Level 30)", color: "#b99d7d"},
+					{name: "Unranked", color: "#b99d7d"},
 					{name: "Bronze", color: "#be6300"},
 					{name: "Argent", color: "#928d8d"},
 					{name: "Or", color: "#f1df0a"},
