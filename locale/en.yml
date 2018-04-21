@@ -1,3 +1,4 @@
+#Roles
 not-playing: Unknown player
 newbie: Newbie (Level < 30)
 unranked: Unranked
@@ -7,3 +8,19 @@ gold: Gold
 platinum: Platinum
 diamond: Diamond
 challenger: Challenger
+
+#Bot
+botName: Lol Autograde
+botGame: ? I'm a bot i can't play!
+rolesUpdated: Roles updated!
+notAllowedToUpdate: You are not allowed to use this command!
+rolesCreated: "Roles created! They will be given according to your in game rank!"
+
+#Debug
+botConnected: Bot successfully connected.
+apiError: [ERROR] Problem with the LoL's Api key. (Expired?)
+rolesUpdateFinished: "Retrieving members in game rank finished! Roles were updated."
+rolesUpdateStarted: "Retrieving members in game rank started!"
+memberRankProcessing: "Retrieving in game rank for "
+botPermissionOk: "Bot's permissions ok"
+botPermissionProblem: "/!\\ Something's wrong with the bot's permissions"

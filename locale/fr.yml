@@ -1,9 +1,26 @@
-not-playing: Vagabond
-newbie: Newbie (Niveau < 30)
-unranked: Unranked
-bronze: Bronze
-silver: Argent
-gold: Or
-platinum: Platine
-diamond: Diamant
-challenger: Challenger
+#Rôles
+not-playing: "Vagabond"
+newbie: "Newbie (Niveau < 30)"
+unranked: "Unranked"
+bronze: "Bronze"
+silver: "Argent"
+gold: "Or"
+platinum: "Platine"
+diamond: "Diamant"
+challenger: "Challenger"
+
+#Bot
+botName: "Lol Autograde"
+botGame: "rien car je suis un bot"
+rolesUpdated: "Grades mis à jour!"
+notAllowedToUpdate: "Tu n'a pas l'autorisation de faire cette commande!"
+rolesCreated: "Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans lol!"
+
+#Debug
+botConnected: "Le bot s'est bien connecté!"
+apiError: "[ERREUR] Problème avec l'api key de LoL. (Expirée?)"
+rolesUpdateFinished: "Fetching finis et mis à jour faite!"
+rolesUpdateStarted: "Début du fetching des rangs des joueurs"
+memberRankProcessing: "Récupération des données pour"
+botPermissionOk: "Permissions du bot ok"
+botPermissionProblem: "/!\\ Problème avec les permissions du bot"

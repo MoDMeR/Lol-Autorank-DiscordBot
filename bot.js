@@ -1,6 +1,7 @@
 (function(){
 	const config = require("./config.js");
 	const Discord = require("discord.js");
+	const locale = config.getLocale();
 
 	var bot;
 
@@ -11,9 +12,9 @@
 			if((msg.content === "!updateLol")) {
 				if(msg.member.hasPermission("MANAGE_ROLES")){
 					Roles.requestUpdateRoles(msg.guild);
-					msg.reply("Grades mis à jour!");
+					msg.reply(locale["rolesUpdated"]);
 				} else {
-					msg.reply("Tu n'a pas l'autorisation de faire cette commande!");
+					msg.reply(locale["notAllowedToUpdate"]);
 				}
 			}
 		});
@@ -35,9 +36,9 @@
 		});
 
 		bot.on("ready", function(){
-			bot.user.setUsername("Lol Autograde");
-			bot.user.setGame("rien car je suis un bot");
-			console.log("Le bot s'est bien connecté!");
+			bot.user.setUsername(locale["botName"]);
+			bot.user.setGame(locale["botGame"]);
+			console.log(locale["botConnected"]);
 
 			callback();
 		});

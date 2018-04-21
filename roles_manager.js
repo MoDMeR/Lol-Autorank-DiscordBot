@@ -37,9 +37,9 @@
 		});
 
 		if(guild.members.find("user", this.DiscordBot.getBot().user).hasPermission("MANAGE_ROLES")){
-			console.log(guild.name+" permission ok");
+			console.log(guild.name+" : " + locale["botPermissionOk"]);
 		} else {
-			console.log(guild.name+" permission pas ok");
+			console.log(guild.name+" : " + locale["botPermissionProblem"]);
 		}
 
 		if(createdRole){
@@ -47,7 +47,7 @@
 		    if(channelToBroadcast == undefined)
 		        channelToBroadcast = guild.channels.array()[0];
 
-		    channelToBroadcast.send("@everyone Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans lol!");
+		    channelToBroadcast.send(locale["rolesCreated"]);
 		}
 	}
 
@@ -109,7 +109,7 @@
 		if(isUpdatingRoles || queueList.size <= 0)
 			return;
 
-		console.log("Début du fetching des données");
+		console.log(locale["rolesUpdateStarted"]);
 		isUpdatingRoles = true;
 		this.processNextMember();
 	}
@@ -121,13 +121,13 @@
 		}
 
 		var summonerName = queueList.keys().next().value;
-		console.log("Processing", summonerName)
+		console.log(locale["memberRankProcessing"], summonerName);
 		LolApi.getSummonerDetails(summonerName, this.summonerDetailsReceive, this);
 	}
 
 	module.exports.rolesUpdated = function(){
 		isUpdatingRoles = false;
-		console.log("Fetching finis et mis à jour faite!");
+		console.log(locale["rolesUpdateFinished"]);
 	}
 
 	module.exports.summonerDetailsReceive = function(thisModule, summonerDetails) {

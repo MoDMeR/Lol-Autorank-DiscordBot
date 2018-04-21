@@ -1,6 +1,7 @@
 (function(){
 	const http = require("https");
 	const config = require("./config.js");
+	const locale = config.getLocale();
 
 	var callbackFunction;
 	var lastHttpRequest = "";
@@ -52,7 +53,7 @@
 
 		else if(statusCode === 403 || statusCode == 401){
 			//api key pb
-			console.log("[ERREUR] Api key problem. (Expired?)");
+			console.log(locale["apiError"]);
 			callbackFunction(thisModule, "dtouch");
 		}
 
