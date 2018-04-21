@@ -1,14 +1,17 @@
 (function() {
 	const LolApi = require("./lol_api.js");
-	const roles = [{name: "Vagabond", color: "#030000"},
-					{name: "Newbies (Level < 30)", color: "NAVY"},
-					{name: "Unranked", color: "#b99d7d"},
-					{name: "Bronze", color: "#be6300"},
-					{name: "Argent", color: "#928d8d"},
-					{name: "Or", color: "#f1df0a"},
-					{name: "Platine", color: "#2dc387"},
-					{name: "Diamant", color: "#00adff"},
-					{name: "Challenger", color: "#ffa80c"}];
+	const config = require("./config.js");
+	const locale = config.getLocale();
+
+	const roles = [{name: locale["not-playing"], color: "#030000"},
+					{name: locale["newbie"], color: "NAVY"},
+					{name: locale["unranked"], color: "#b99d7d"},
+					{name: locale["bronze"], color: "#be6300"},
+					{name: locale["silver"], color: "#928d8d"},
+					{name: locale["gold"], color: "#f1df0a"},
+					{name: locale["platinum"], color: "#2dc387"},
+					{name: locale["diamond"], color: "#00adff"},
+					{name: locale["challenger"], color: "#ffa80c"}];
 
 	var queueList = new Map();
 
