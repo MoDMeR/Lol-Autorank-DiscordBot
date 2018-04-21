@@ -14,7 +14,7 @@ botName: "Lol Autograde"
 botGame: "rien car je suis un bot"
 rolesUpdated: "Grades mis à jour!"
 notAllowedToUpdate: "Tu n'a pas l'autorisation de faire cette commande!"
-rolesCreated: "Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans lol!"
+rolesCreated: "Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans LoL!"
 
 #Debug
 botConnected: "Le bot s'est bien connecté!"
