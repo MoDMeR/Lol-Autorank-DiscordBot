@@ -12,6 +12,10 @@
         return config["lolApiKey"];
     }
 
+    function getUpdateRankCommand() {
+        return config["updateRankCommand"];
+    }
+
     function getLocale() {
         if(config["locale"] == undefined){
             loadLocale("fr");
@@ -61,4 +65,5 @@
     module.exports.getLocale = getLocale;
     module.exports.loadFile = loadFile;
     module.exports.loadConfig = loadConfig;
+    module.exports.getUpdateRankCommand = getUpdateRankCommand;
 })();

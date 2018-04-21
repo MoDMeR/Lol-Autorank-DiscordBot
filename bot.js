@@ -9,7 +9,7 @@
 		bot = new Discord.Client();
 
 		bot.on("message", function(msg) {
-			if((msg.content === "!updateLol")) {
+			if((msg.content === config.getUpdateRankCommand())) {
 				if(msg.member.hasPermission("MANAGE_ROLES")){
 					Roles.requestUpdateRoles(msg.guild);
 					msg.reply(locale["rolesUpdated"]);

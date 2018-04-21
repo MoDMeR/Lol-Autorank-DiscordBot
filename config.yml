@@ -1,3 +1,7 @@
-lolApiKey: MyApiFromLol
-discordBotKey: MyDiscordBotKey
-language: en
+#API Keys
+lolApiKey: "MyApiFromLol"
+discordBotKey: "MyDiscordBotKey"
+
+#Configuration
+language: "en"
+updateRankCommand: "!updateRank"
