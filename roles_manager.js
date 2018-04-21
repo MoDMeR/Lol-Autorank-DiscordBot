@@ -42,9 +42,12 @@
 			console.log(guild.name+" permission pas ok");
 		}
 
-
 		if(createdRole){
-			guild.channels.find("name", "general").send("@everyone Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans lol!");
+		    var channelToBroadcast = guild.channels.find("name", "general");
+		    if(channelToBroadcast == undefined)
+		        channelToBroadcast = guild.channels.array()[0];
+
+		    channelToBroadcast.send("@everyone Les rôles pour les ranked ont été crées, vos rôles seront bientôt changés en fonction de votre classement dans lol!");
 		}
 	}
 
