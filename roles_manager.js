@@ -45,7 +45,7 @@
 		if(createdRole){
 		    var channelToBroadcast = guild.channels.find("name", "general");
 		    if(channelToBroadcast == undefined)
-		        channelToBroadcast = guild.channels.array()[0];
+		        channelToBroadcast = guild.channels.find("type", "text");
 
 		    channelToBroadcast.send(locale["rolesCreated"]);
 		}
