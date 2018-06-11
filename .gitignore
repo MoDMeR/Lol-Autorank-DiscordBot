@@ -59,4 +59,5 @@ typings/
 .env
 
 start.sh
+start.bat
 keys.yml
