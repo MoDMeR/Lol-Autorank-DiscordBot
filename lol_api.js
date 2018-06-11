@@ -64,12 +64,12 @@
 
 		else if(statusCode === 429) {
 			//api key limit rate
-			setTimeout(this.retry(), 500);
+			setTimeout(retry(), 500);
 		}
 
 		else if(statusCode === 503 || statusCode === 504){
 			//server down
-			setTimeout(this.retry(), 500);
+			setTimeout(retry(), 500);
 		} else {
 			callbackFunction(thisModule, "dtouch");
 		}

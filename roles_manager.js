@@ -201,8 +201,10 @@
 							item.removeRole(discordRoles[i]);
 					}
 				}
+				try {
 				if(item.roles.find("name", discordRoles[roleNumber].name) === null)
 					item.addRole(discordRoles[roleNumber]);
+				}catch(e){}
 			});
 		}
 
