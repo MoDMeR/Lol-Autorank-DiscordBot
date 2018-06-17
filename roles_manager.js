@@ -11,6 +11,7 @@
 					{name: locale["gold"], color: "#f1df0a"},
 					{name: locale["platinum"], color: "#2dc387"},
 					{name: locale["diamond"], color: "#00adff"},
+					{name: locale["master"], color: "#e5a534"},
 					{name: locale["challenger"], color: "#ffa80c"}];
 
 	var queueList = new Map();
@@ -176,8 +177,10 @@
 					gradeNumber = 6;
 				} else if(item.tier === "DIAMOND"){
 					gradeNumber = 7;
+				} else if(item.tier === "MASTER") {
+					gradeNumber = 8;
 				} else if(item.tier === "CHALLENGER"){
-					gradeNumer = 8;
+					gradeNumer = 9;
 				}
 			}
 		});
