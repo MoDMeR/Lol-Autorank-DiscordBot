@@ -1,0 +1,27 @@
+#Roles
+not-playing: "Неизвестный игрок"
+newbie: "Новичок (до 30 лвл)"
+unranked: "Без ранга"
+bronze: "Бронза"
+silver: "Серебро"
+gold: "Золото"
+platinum: "Платина"
+diamond: "Алмаз"
+master: "Мастер"
+challenger: "Претендент"
+
+#Bot
+botName: "Lol Autograde"
+botGame: "? Я бот, я не могу играть!"
+rolesUpdated: "Роли были обновлены!"
+notAllowedToUpdate: "У Вас нет прав для использования этой команды!"
+rolesCreated: "Роли созданы! Они будут выданы в соответствии с рангом в ЛоЛ!"
+
+#Debug
+botConnected: "Я удачно подключился."
+apiError: "[ОШИБКА] Проблема с Api ключом ЛоЛа. (Истек?)"
+rolesUpdateFinished: "Выдача ролей завершена!"
+rolesUpdateStarted: "Начинаем выдачу ролей!"
+memberRankProcessing: "Получаем ранг"
+botPermissionOk: "У бота есть все нужные права"
+botPermissionProblem: "/!\\ Что-то не так с правами у бота"
